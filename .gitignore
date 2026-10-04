@@ -1,0 +1,23 @@
+# Exclusiones de informes y archivos temporales del repositorio de código
+Informe_Tarea6_HojaDeVida_Flutter_Lascano.docx
+Informe_Tarea6_HojaDeVida_Flutter_Lascano.pdf
+*.docx
+*.pdf
+!web_cv/Certificado-Sebastian-Reina-Gordon.pdf
+!cv_flutter_wrapper/assets/web_cv/Certificado-Sebastian-Reina-Gordon.pdf
+
+# Scripts utilitarios y binarios temporales
+*.msi
+*.bat
+descargar_wsl.py
+exportar_pdf.py
+generar_scaffolding_flutter.py
+generate_doc_tarea6.py
+copiar_assets.py
+RESUMEN_PROYECTO_Y_PASOS.md
+
+# Archivos de entorno y compilación
+build/
+.dart_tool/
+.idea/
+*.iml

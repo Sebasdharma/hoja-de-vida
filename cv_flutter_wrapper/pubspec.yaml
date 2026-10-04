@@ -1,0 +1,30 @@
+name: cv_flutter_wrapper
+description: "Aplicación Flutter para embeber Hoja de Vida interactiva mediante webview_flutter y controles nativos en AppBar - Tarea 6"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.7.0
+  webview_flutter_android: ^3.16.0
+  webview_flutter_wkwebview: ^3.13.0
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/web_cv/
+    - assets/web_cv/index.html
+    - assets/web_cv/styles.css
+    - assets/web_cv/app.js
+    - assets/web_cv/profile.jpg
+    - assets/web_cv/Certificado-Sebastian-Reina-Gordon.pdf

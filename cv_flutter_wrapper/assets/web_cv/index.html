@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hoja de Vida interactiva y profesional - Jhoel Sebastian Reina Gordon | Desarrollador de Software y Móvil">
+    <title>Jhoel Sebastian Reina Gordon | Software & Mobile Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar" id="main-nav">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="code-bracket">&lt;</span>SebasReina<span class="code-accent">.Dev</span><span class="code-bracket">/&gt;</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-menu">
+                <a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> Sobre Mí</a>
+                <a href="#skills" class="nav-item"><i class="fa-solid fa-code"></i> Habilidades</a>
+                <a href="#experience" class="nav-item"><i class="fa-solid fa-briefcase"></i> Trayectoria</a>
+                <a href="#certifications" class="nav-item"><i class="fa-solid fa-award"></i> Certificados</a>
+                <a href="#projects" class="nav-item"><i class="fa-solid fa-layer-group"></i> Proyectos</a>
+                <a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Cambiar tema" title="Cambiar tema claro/oscuro">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <button id="print-cv-btn" class="btn-primary btn-sm">
+                    <i class="fa-solid fa-file-arrow-down"></i> Exportar CV
+                </button>
+                <button id="mobile-menu-btn" class="btn-icon mobile-only" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container hero-split">
+                <!-- Text Column -->
+                <div class="hero-text-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Disponible para nuevos proyectos & desarrollo
+                    </div>
+                    <h1 class="hero-title">
+                        Hola, soy <span class="gradient-text">Jhoel Sebastian</span><br>Reina Gordon
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Desarrollador de Software & <span class="typed-text" id="typed-element">Especialista Full Stack & Móvil</span>
+                    </h2>
+                    <p class="hero-description">
+                        Estudiante de la <strong>Universidad Politécnica Estatal del Carchi (UPEC)</strong> con sólida experiencia en desarrollo de aplicaciones móviles (Flutter, Android), arquitecturas empresariales en C# .NET y sistemas web interactivos. Enfoque disciplinado en resolución de problemas complejos, liderazgo operativo y optimización de procesos.
+                    </p>
+
+                    <!-- Quick Contact Pills -->
+                    <div class="hero-contact-pills">
+                        <a href="tel:0999736566" class="contact-pill">
+                            <i class="fa-solid fa-phone"></i> 0999736566
+                        </a>
+                        <a href="mailto:10cdreinasebastian@gmail.com" class="contact-pill">
+                            <i class="fa-solid fa-envelope"></i> 10cdreinasebastian@gmail.com
+                        </a>
+                        <span class="contact-pill">
+                            <i class="fa-solid fa-location-dot"></i> Tulcán, Carchi - Ecuador
+                        </span>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Contáctame
+                        </a>
+                        <a href="#certifications" class="btn-secondary">
+                            <i class="fa-solid fa-award"></i> Ver Certificado IA
+                        </a>
+                        <a href="https://wa.me/593999736566?text=Hola%20Jhoel%20Sebastian,%20vi%20tu%20Hoja%20de%20Vida%20y%20me%20gustaria%20contactarte" target="_blank" class="btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Stats Counters -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="3">3+</div>
+                            <div class="stat-label">Años de Trayectoria Integral</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="10">10+</div>
+                            <div class="stat-label">Proyectos Web & Móvil</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="100">100%</div>
+                            <div class="stat-label">Compromiso & Calidad</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Photo Column -->
+                <div class="hero-avatar-column">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-card">
+                            <img src="profile.jpg" alt="Foto de Perfil - Jhoel Sebastian Reina Gordon" class="profile-img" id="user-profile-pic">
+                            <div class="avatar-badge">
+                                <i class="fa-solid fa-check-circle"></i> Perfil Verificado UPEC
+                            </div>
+                        </div>
+                        <!-- Floating Tech Tags -->
+                        <div class="floating-tag tag-flutter">
+                            <i class="fa-brands fa-flutter"></i> Flutter
+                        </div>
+                        <div class="floating-tag tag-dotnet">
+                            <i class="fa-brands fa-microsoft"></i> .NET & C#
+                        </div>
+                        <div class="floating-tag tag-ai">
+                            <i class="fa-solid fa-brain"></i> IA Certified
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Perfil Profesional</span>
+                    <h2 class="section-title">Sobre Mí & Enfoque de Trabajo</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Desarrollo de Software & Arquitectura</h3>
+                        </div>
+                        <p>
+                            Dominio en el diseño de arquitecturas escalables basadas en patrones limpios (MVC, MVVM). Desarrollo de interfaces interactivas modernas y APIs robustas con C# .NET y frameworks multiplataforma.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h3>Ecosistema Móvil & Wrappers</h3>
+                        </div>
+                        <p>
+                            Evolución de aplicaciones nativas en Android (Kotlin/Java) hacia contenedores híbridos eficientes con Flutter y WebViews embebidos, garantizando fluidez, compatibilidad y mantenimiento unificado.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h3>Liderazgo & Gestión Operativa</h3>
+                        </div>
+                        <p>
+                            Experiencia multidisciplinaria forjada en supervisión logística de obras civiles, dirección de producción, gestión comercial bajo CRM y administración de puntos de venta e inventarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Skills Section with Dynamic Filter -->
+        <section class="section skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Competencias</span>
+                    <h2 class="section-title">Habilidades Técnicas & Profesionales</h2>
+                    <p class="section-subtitle">Filtra mis destrezas por área técnica, desarrollo o competencias de gestión</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Category Filters (JavaScript Interactive) -->
+                <div class="skills-filter-container" id="skills-filters">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="fa-solid fa-border-all"></i> Todas
+                    </button>
+                    <button class="filter-btn" data-category="mobile">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Móvil & Flutter
+                    </button>
+                    <button class="filter-btn" data-category="backend">
+                        <i class="fa-solid fa-server"></i> Backend & C#
+                    </button>
+                    <button class="filter-btn" data-category="web">
+                        <i class="fa-brands fa-html5"></i> Web Frontend
+                    </button>
+                    <button class="filter-btn" data-category="ai">
+                        <i class="fa-solid fa-brain"></i> IA & Herramientas
+                    </button>
+                    <button class="filter-btn" data-category="management">
+                        <i class="fa-solid fa-users-gear"></i> Gestión & Liderazgo
+                    </button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skills-grid-container">
+                    <!-- Mobile & Flutter -->
+                    <div class="skill-card glass-card" data-category="mobile">
+                        <div class="skill-icon-wrap"><i class="fa-brands fa-flutter"></i></div>
+                        <div class="skill-info">
+                            <h4>Flutter & WebView</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 88%;"></div></div>
+                            <span class="skill-level">Avanzado - 88%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="mobile">
+                        <div class="skill-icon-wrap"><i class="fa-brands fa-android"></i></div>
+                        <div class="skill-info">
+                            <h4>Android Nativo (Kotlin / Java)</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+                            <span class="skill-level">Avanzado - 85%</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & C# -->
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-icon-wrap"><i class="fa-brands fa-microsoft"></i></div>
+                        <div class="skill-info">
+                            <h4>C# & .NET Core / MVC</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
+                            <span class="skill-level">Avanzado - 90%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-icon-wrap"><i class="fa-solid fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>SQL Server & PostgreSQL</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 86%;"></div></div>
+                            <span class="skill-level">Intermedio-Avanzado - 86%</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Frontend -->
+                    <div class="skill-card glass-card" data-category="web">
+                        <div class="skill-icon-wrap"><i class="fa-brands fa-html5"></i></div>
+                        <div class="skill-info">
+                            <h4>HTML5 Semántico & CSS3 Responsive</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+                            <span class="skill-level">Experto - 95%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="web">
+                        <div class="skill-icon-wrap"><i class="fa-brands fa-js"></i></div>
+                        <div class="skill-info">
+                            <h4>JavaScript ES6+ & DOM</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 87%;"></div></div>
+                            <span class="skill-level">Avanzado - 87%</span>
+                        </div>
+                    </div>
+
+                    <!-- IA & Herramientas -->
+                    <div class="skill-card glass-card" data-category="ai">
+                        <div class="skill-icon-wrap"><i class="fa-solid fa-brain"></i></div>
+                        <div class="skill-info">
+                            <h4>Inteligencia Artificial Aplicada</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 88%;"></div></div>
+                            <span class="skill-level">Certificado Internacional</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="ai">
+                        <div class="skill-icon-wrap"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>Git / GitHub & Docker</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 84%;"></div></div>
+                            <span class="skill-level">Intermedio-Avanzado - 84%</span>
+                        </div>
+                    </div>
+
+                    <!-- Gestión & Liderazgo -->
+                    <div class="skill-card glass-card" data-category="management">
+                        <div class="skill-icon-wrap"><i class="fa-solid fa-headset"></i></div>
+                        <div class="skill-info">
+                            <h4>Gestión Comercial & CRM</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 92%;"></div></div>
+                            <span class="skill-level">Experto - 92%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="management">
+                        <div class="skill-icon-wrap"><i class="fa-solid fa-dolly"></i></div>
+                        <div class="skill-info">
+                            <h4>Control Logístico & Inventarios</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
+                            <span class="skill-level">Avanzado - 90%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="management">
+                        <div class="skill-icon-wrap"><i class="fa-solid fa-clipboard-check"></i></div>
+                        <div class="skill-info">
+                            <h4>Control de Calidad & Procesos</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
+                            <span class="skill-level">Avanzado - 90%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="management">
+                        <div class="skill-icon-wrap"><i class="fa-solid fa-cash-register"></i></div>
+                        <div class="skill-info">
+                            <h4>Conciliación de Caja & POS</h4>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 94%;"></div></div>
+                            <span class="skill-level">Experto - 94%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section (Interactive Accordion) -->
+        <section class="section experience-section" id="experience">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Historial Profesional</span>
+                    <h2 class="section-title">Trayectoria Laboral & Formación</h2>
+                    <p class="section-subtitle">Haz clic en cada experiencia para desplegar sus responsabilidades técnicas y logros</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Accordion Global Controls -->
+                <div class="accordion-controls">
+                    <button id="expand-all-btn" class="btn-ghost btn-sm">
+                        <i class="fa-solid fa-angles-down"></i> Expandir Todos
+                    </button>
+                    <button id="collapse-all-btn" class="btn-ghost btn-sm">
+                        <i class="fa-solid fa-angles-up"></i> Colapsar Todos
+                    </button>
+                </div>
+
+                <div class="accordion-container" id="experience-accordion">
+                    <!-- Item 1: Construcción -->
+                    <div class="accordion-item glass-card active">
+                        <button class="accordion-header" aria-expanded="true">
+                            <div class="accordion-title-group">
+                                <span class="role-badge construction"><i class="fa-solid fa-trowel-bricks"></i> Construcción & Obras</span>
+                                <h3 class="role-title">Asistente Técnico de Obras Civiles y Gestión Logística</h3>
+                                <div class="role-meta">
+                                    <span class="company-name"><i class="fa-solid fa-building"></i> Infraestructura y Construcción Civil</span>
+                                    <span class="role-period"><i class="fa-regular fa-calendar"></i> 1 Año de Gestión</span>
+                                </div>
+                            </div>
+                            <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p class="lead-text">Supervisión operativa en terreno, control de suministros y trazabilidad de materiales críticos en proyectos de infraestructura.</p>
+                                <ul class="achievement-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Supervisión directa de actividades operativas en campo garantizando el cumplimiento de cronogramas y especificaciones técnicas.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Control, registro y trazabilidad de inventarios de materiales pesados y herramientas mediante reportes de consumo.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Aplicación y vigilancia estricta de protocolos de seguridad industrial y mitigación de riesgos laborales en obra.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Call Center -->
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <div class="accordion-title-group">
+                                <span class="role-badge callcenter"><i class="fa-solid fa-headset"></i> Comunicaciones & Ventas</span>
+                                <h3 class="role-title">Especialista en Comunicación Comercial y Gestión CRM</h3>
+                                <div class="role-meta">
+                                    <span class="company-name"><i class="fa-solid fa-phone-volume"></i> Centro de Contacto & Servicios Comerciales</span>
+                                    <span class="role-period"><i class="fa-regular fa-calendar"></i> 5 Meses de Gestión</span>
+                                </div>
+                            </div>
+                            <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p class="lead-text">Gestión de prospección comercial, fidelización y resolución de requerimientos con plataformas CRM y telefonía IP.</p>
+                                <ul class="achievement-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Ejecución de campañas de contacto y venta consultiva cumpliendo metas exigentes de conversión y satisfacción.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Manejo avanzado de herramientas CRM y sistemas de telefonía IP para registro estructurado de interacciones.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Aplicación de técnicas de negociación persuasiva y resolución oportuna de objeciones bajo entornos de alto volumen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Panadería / Producción -->
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <div class="accordion-title-group">
+                                <span class="role-badge bakery"><i class="fa-solid fa-wheat-awn"></i> Producción & Calidad</span>
+                                <h3 class="role-title">Gestor de Procesos de Producción y Control de Calidad Alimentaria</h3>
+                                <div class="role-meta">
+                                    <span class="company-name"><i class="fa-solid fa-store"></i> Industria de Panificación & Alimentos</span>
+                                    <span class="role-period"><i class="fa-regular fa-calendar"></i> 1 Año de Gestión</span>
+                                </div>
+                            </div>
+                            <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p class="lead-text">Planificación y ejecución de procesos de manufactura panadera, estandarización de recetas y control de mermas.</p>
+                                <ul class="achievement-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Dirección y ejecución del ciclo completo de producción panadera bajo estrictas normas de formulación y pesado.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Monitoreo de variables críticas de proceso (temperaturas de horneado, tiempos de fermentación y frescura).</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Optimización en el uso de insumos, logrando una reducción significativa de desperdicios y mermas operativas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Papelería Popular -->
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <div class="accordion-title-group">
+                                <span class="role-badge retail"><i class="fa-solid fa-cash-register"></i> Facturación & Inventarios</span>
+                                <h3 class="role-title">Gestor de Operaciones de Caja, Facturación e Inventarios</h3>
+                                <div class="role-meta">
+                                    <span class="company-name"><i class="fa-solid fa-shop"></i> Centro Comercial y Papelería "Popular"</span>
+                                    <span class="role-period"><i class="fa-regular fa-calendar"></i> 6 Meses de Gestión</span>
+                                </div>
+                            </div>
+                            <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p class="lead-text">Administración integral del punto de venta (POS), conciliación transaccional y organización de stock comercial.</p>
+                                <ul class="achievement-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Procesamiento exacto de cobros en múltiples modalidades de pago con 100% de precisión en arqueos diarios.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Control, codificación y reposición sistemática de inventarios en bodega y exhibición.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Atención técnica y personalizada a clientes corporativos y particulares con alto índice de satisfacción.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Educación Superior -->
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <div class="accordion-title-group">
+                                <span class="role-badge education"><i class="fa-solid fa-graduation-cap"></i> Formación Universitaria</span>
+                                <h3 class="role-title">Ingeniería / Desarrollo de Software</h3>
+                                <div class="role-meta">
+                                    <span class="company-name"><i class="fa-solid fa-university"></i> Universidad Politécnica Estatal del Carchi (UPEC)</span>
+                                    <span class="role-period"><i class="fa-regular fa-calendar"></i> En Curso</span>
+                                </div>
+                            </div>
+                            <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p class="lead-text">Formación académica avanzada en desarrollo de software, programación móvil multiplataforma, bases de datos y arquitectura de sistemas.</p>
+                                <ul class="achievement-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Materia: Programación Móvil / Aplicaciones Móviles con el docente PhD. Samuel Lascano Rivera.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Desarrollo de proyectos prácticos con Android Nativo, Flutter, Web Responsive y .NET Core.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section certifications-section" id="certifications">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Acreditaciones</span>
+                    <h2 class="section-title">Certificaciones Destacadas</h2>
+                    <p class="section-subtitle">Validación formal de conocimientos en tecnologías de vanguardia</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="certification-card glass-card">
+                    <div class="cert-badge-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header-meta">
+                            <span class="cert-tag"><i class="fa-solid fa-brain"></i> Inteligencia Artificial</span>
+                            <span class="cert-id">ID: 4c9osjwr</span>
+                        </div>
+                        <h3 class="cert-title">Certificado Internacional en Inteligencia Artificial</h3>
+                        <p class="cert-recipient">Otorgado a: <strong>Jhoel Sebastian Reina Gordon</strong></p>
+                        <p class="cert-desc">
+                            Acreditación de competencias en fundamentos, modelos predictivos, agentes inteligentes y aplicaciones prácticas de Inteligencia Artificial y Machine Learning.
+                        </p>
+                        <div class="cert-actions">
+                            <a href="Certificado-Sebastian-Reina-Gordon.pdf" target="_blank" class="btn-primary btn-sm">
+                                <i class="fa-solid fa-file-pdf"></i> Ver Certificado PDF
+                            </a>
+                            <a href="Certificado-Sebastian-Reina-Gordon.pdf" download="Certificado-Sebastian-Reina-Gordon.pdf" class="btn-secondary btn-sm">
+                                <i class="fa-solid fa-download"></i> Descargar Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Portafolio</span>
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                    <p class="section-subtitle">Soluciones de software reales desarrolladas con arquitecturas móviles y web</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: CacetCobranzaMovil -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-type-badge mobile"><i class="fa-brands fa-android"></i> App Móvil & Backend</div>
+                            <h3>CacetCobranzaMovil</h3>
+                        </div>
+                        <p class="project-desc">
+                            Aplicación móvil empresarial en Android (Kotlin) para gestión de cobranzas, captura de depósitos y sincronización en terreno con backend en C# .NET y SQL Server.
+                        </p>
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>C# .NET</span>
+                            <span>SQL Server</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: MesaAyuda -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-type-badge web"><i class="fa-solid fa-globe"></i> Web Corporativa</div>
+                            <h3>Sistema de Mesa de Ayuda</h3>
+                        </div>
+                        <p class="project-desc">
+                            Plataforma web desarrollada en ASP.NET Core MVC para el control de tickets, abogados externos, gestión de activos y notificaciones automáticas por correo electrónico.
+                        </p>
+                        <div class="project-tags">
+                            <span>ASP.NET Core</span>
+                            <span>C# MVC</span>
+                            <span>Entity Framework</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Tarea 6 Flutter Wrapper -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-type-badge flutter"><i class="fa-brands fa-flutter"></i> Flutter Embed</div>
+                            <h3>CV Mobile Wrapper (Tarea 6)</h3>
+                        </div>
+                        <p class="project-desc">
+                            Contenedor híbrido en Flutter que embebe la hoja de vida web responsiva mediante WebView con controles nativos de navegación, tema y soporte de assets locales offline.
+                        </p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>WebView</span>
+                            <span>HTML5/CSS3</span>
+                            <span>Offline Assets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Comunicación</span>
+                    <h2 class="section-title">Contáctame</h2>
+                    <p class="section-subtitle">Envíame un mensaje o contáctame directamente a mis canales oficiales</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info-cards">
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-user-tie"></i></div>
+                            <div>
+                                <h4>Nombre Completo</h4>
+                                <p>Jhoel Sebastian Reina Gordon</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Teléfono / Móvil</h4>
+                                <p><a href="tel:0999736566">0999736566</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Correo Electrónico</h4>
+                                <p><a href="mailto:10cdreinasebastian@gmail.com">10cdreinasebastian@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-university"></i></div>
+                            <div>
+                                <h4>Institución Académica</h4>
+                                <p>Universidad Politécnica Estatal del Carchi (UPEC)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form -->
+                    <div class="contact-form-card glass-card">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name">Nombre Completo *</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="contact-name" name="name" placeholder="Tu nombre y apellido" required>
+                                </div>
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Correo Electrónico *</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="contact-email" name="email" placeholder="ejemplo@correo.com" required>
+                                </div>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Asunto *</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-tag input-icon"></i>
+                                    <input type="text" id="contact-subject" name="subject" placeholder="Propuesta de proyecto / Consulta" required>
+                                </div>
+                                <span class="form-error" id="subject-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="label-row">
+                                    <label for="contact-message">Mensaje *</label>
+                                    <span class="char-counter"><span id="char-count">0</span> / 500</span>
+                                </div>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <textarea id="contact-message" name="message" rows="4" maxlength="500" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                </div>
+                                <span class="form-error" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-block" id="submit-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="code-bracket">&lt;</span>SebasReina<span class="code-accent">.Dev</span><span class="code-bracket">/&gt;</span>
+                    <p>Hoja de Vida Profesional desarrollada para la Tarea 6 - UPEC</p>
+                    <p class="footer-docente">Docente: <strong>PhD. Samuel Lascano Rivera</strong></p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Inicio</a>
+                    <a href="#about">Sobre Mí</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#experience">Trayectoria</a>
+                    <a href="#certifications">Certificados</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jhoel Sebastian Reina Gordon. Todos los derechos reservados.</p>
+                <p class="academic-badge">Universidad Politécnica Estatal del Carchi (UPEC)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
